@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f5fa;
+    color: #2d2d2d;
+}
+
+.about-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: #bf2626;
+    padding: 15px;
+    text-align: center;
+    color: #ffffff;
+}
+.mission-vision h2,
+.team h2,
+.contact h2 {
+    margin-left: 30px;
+    padding-top: 20px;
+    color: #e70536e8;
+}
+.mission-vision p,
+.team p,
+.contact p {
+    margin-bottom: 27px;
+    margin-left: 30px;
+    font-size: 1.25em;
+    padding-bottom: 30px;
+    color: #34043c;
+}
+
+.team-member {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100px; /* Adjust the image size as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.contact p {
+    margin-bottom: 8px;
+}
+.mission-vision,
+.team,
+.contact
+{
+    background-color: #ffa1a16c;
+} 
+/* Add more styles as needed based on your specific requirements */
