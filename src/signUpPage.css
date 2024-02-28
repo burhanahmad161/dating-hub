@@ -1,14 +1,10 @@
 .mainForm {
-  margin-top: 10%;
-  position: absolute;
+  overflow: hidden;
+  margin-top: 2%;
+  margin-left: 40%;
   z-index: 1;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
+  max-width: 400px;
   padding: 40px;
-  transform: translate(-50%, -50%);
   background-color: #ffa1a16c;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(71, 5, 5, 0.6);
@@ -18,66 +14,57 @@
 #header-h1 {
   color: white;
   margin-top: 4%;
-  padding: 40px 85px 40px 85px;
-  display: inline-flex;
-  margin-left: 40.5%;
+  padding: 20px; /* Adjust padding for better responsiveness */
   text-align: center;
   background: #bf2626;
+  margin-left: 40%; /* Adjust margin for better responsiveness */
+  margin-right: 40%;
 }
 
-.mainForm input {
+.mainForm input,
+.mainForm label,
+#profession,
+#gender {
   width: 100%;
   padding: 10px 0;
-  font-size: 19px;
+  font-size: 16px; /* Adjust font size for better responsiveness */
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Adjust margin for better responsiveness */
   border: none;
   border-bottom: 1px solid red;
   outline: none;
   background: transparent;
 }
 
-#profession {
-  margin-left: 7px;
-  font-size: 19px;
+#profession,
+#gender {
+  font-size: 16px; /* Adjust font size for better responsiveness */
   border-radius: 50px;
+  color: #ff0000;
 }
-#gender{
-  margin-top: 25px;
-  margin-left: 20px;
-  font-size: 19px;
-  border-radius: 50px; 
+
+#gender {
+  margin-top: 15px; /* Adjust margin for better responsiveness */
+  margin-left: 0; /* Adjust margin for better responsiveness */
 }
 
 #blah {
-  margin-top: 20px;
-}
-
-.mainForm label {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
+  margin-top: 15px; /* Adjust margin for better responsiveness */
 }
 
 .btn {
-  position: relative;
+  margin-left: 30%;
   display: inline-block;
   padding: 10px 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   color: #ff0000;
-  font-size: 16px;
+  font-size: 14px; /* Adjust font size for better responsiveness */
   text-decoration: none;
   overflow: hidden;
   transition: 0.5s;
   margin-top: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1px; 
 }
 
 .btn:hover {
@@ -90,13 +77,26 @@
 input::placeholder {
   color: white;
 }
-.error-message
-{
+
+.error-message {
   margin-top: 10px;
-   color: #cb0707;
-   font-size: 1.5em;
-   font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #cb0707;
+  font-size: 1em; /* Adjust font size for better responsiveness */
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-a{
-  font-size: 1.2em;
+
+a {
+  font-size: 1em;
+  margin-left: 12%;
+  text-decoration: underline;
+  color: #c90a0a;
+}
+a:hover{
+  cursor: pointer;
+}
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  #header-h1 {
+      margin-left: 0;
+  }
 }

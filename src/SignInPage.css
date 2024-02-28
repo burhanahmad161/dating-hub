@@ -1,14 +1,10 @@
 .newMainForm {
-  margin-top: 5%;
-  position: absolute;
+  overflow: hidden;
+  margin-top: 2%;
+  margin-left: 40%;
   z-index: 1;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
+  max-width: 400px;
   padding: 40px;
-  transform: translate(-50%, -50%);
   background-color: #ffa1a16c;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(71, 5, 5, 0.6);
@@ -18,19 +14,19 @@
 #newHeader-h1 {
   color: white;
   margin-top: 4%;
-  padding: 40px 85px 40px 85px;
-  display: inline-flex;
-  margin-left: 41.5%;
+  padding: 20px; /* Adjust padding for better responsiveness */
   text-align: center;
   background: #bf2626;
+  margin-left: 40%; /* Adjust margin for better responsiveness */
+  margin-right: 40%;
 }
 
 .newMainForm input {
   width: 100%;
   padding: 10px 0;
-  font-size: 19px;
+  font-size: 16px; /* Adjust font size for better responsiveness */
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 20px; /* Adjust margin for better responsiveness */
   border: none;
   border-bottom: 1px solid red;
   outline: none;
@@ -38,18 +34,18 @@
 }
 
 .newBtn {
-  position: relative;
+  margin-left: 30%;
   display: inline-block;
   padding: 10px 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 600;
   color: #ff0000;
-  font-size: 16px;
+  font-size: 14px; /* Adjust font size for better responsiveness */
   text-decoration: none;
   overflow: hidden;
   transition: 0.5s;
   margin-top: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;/* Adjust letter spacing for better responsiveness */
 }
 
 .newBtn:hover {
@@ -62,9 +58,21 @@
 .newError-message {
   margin-top: 10px;
   color: #cb0707;
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-a{
-  font-size: 1.2em;
+
+a {
+  font-size: 1em;
+  margin-left: 12%;
+  text-decoration: underline;
+  color: #c90a0a;
+}
+a:hover{
+  cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  #newHeader-h1 {
+    margin-left: 0;
+  }
 }

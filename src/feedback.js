@@ -21,6 +21,7 @@ if (!firebase.apps.length) {
 const db = firebase.firestore();
 
 const Feedback = () => {
+    const [feedback, setFeedback] = useState('');
     const [submitted, setSubmitted] = useState(false);
     const [formValues, setFormValues] = useState({
         name: '',  // Add other fields as needed

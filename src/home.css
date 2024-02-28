@@ -4,9 +4,7 @@ body {
     margin: 0;
     font-family: 'Arial', sans-serif;
     background-color: #f8f5fa;
-    /* Light pink background color */
     color: #2d2d2d;
-    /* Dark text color */
 }
 
 .homepage {
@@ -16,12 +14,10 @@ body {
 }
 
 header {
-    background:#bf2626;
-    /* Dark purple background color */
+    background: #bf2626;
     padding: 15px;
     text-align: center;
     color: #ffffff;
-    /* White text color */
 }
 
 .success-stories,
@@ -71,7 +67,6 @@ header {
 .premium-features h3,
 .pricing-plans h3 {
     color: #e70536e8;
-    /* Dark purple text color */
 }
 
 .safety-tips ul,
@@ -97,9 +92,9 @@ header {
 
 .subscription-info a {
     color: #e70536e8;
-    /* Darker pink link color */
     text-decoration: underline;
 }
+
 .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -109,4 +104,73 @@ header {
 .fade-in.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .homepage {
+        padding: 15px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    .success-stories,
+    .search-matching,
+    .safety-privacy,
+    .dating-tips,
+    .subscription-info {
+        padding: 15px;
+    }
+
+    .success-stories h2,
+    .search-matching h2,
+    .safety-privacy h2,
+    .dating-tips h2,
+    .subscription-info h2 {
+        font-size: 1.2em;
+    }
+
+    .success-stories p,
+    .search-matching p,
+    .safety-privacy p,
+    .dating-tips p,
+    .subscription-info p {
+        font-size: 1em;
+    }
+
+    .safety-tips,
+    .privacy-policy,
+    .profile-tips,
+    .communication-tips,
+    .date-tips,
+    .premium-features,
+    .pricing-plans {
+        margin-top: 15px;
+    }
+
+    .safety-tips h3,
+    .privacy-policy h3,
+    .profile-tips h3,
+    .communication-tips h3,
+    .date-tips h3,
+    .premium-features h3,
+    .pricing-plans h3 {
+        font-size: 1.2em;
+    }
+
+    .safety-tips ul,
+    .privacy-policy ul,
+    .profile-tips ul,
+    .communication-tips ul,
+    .date-tips ul,
+    .premium-features ul,
+    .pricing-plans ul {
+        margin-left: 15px;
+    }
+
+    .subscription-info a {
+        font-size: 0.9em;
+    }
 }

@@ -39,6 +39,9 @@ export default function SignUpPage() {
             [name]: value
         });
     }
+    const handlePageChange = () => {
+        navigate('/alpha');
+    }
     const handleProfessionChange = (e) => {
         setSelectedProfession(e.target.value);
     }
@@ -91,7 +94,7 @@ export default function SignUpPage() {
                     await db.collection('formData').add(formDataWithProfession);
                     setSuccessMessage('Form data sent to Firestore');
                     console.log('Form data sent to Firestore');
-                    navigate('/demo');
+                    navigate('/alpha');
                 } else {
                     setErrorMessage('User already exists!');
                 }
@@ -137,7 +140,7 @@ export default function SignUpPage() {
                             <button onClick={handleSubmit} type="submit" className="btn" disabled={!isFormValid}>Submit</button>
                         </form>
                     </section>
-                        <a href='/alpha'>Already Registered? Login Here...</a>
+                        <a onClick={handlePageChange}>Already Registered? Login Here...</a>
                 </Fade>
                 {errorMessage && <div className="error-message">{errorMessage}</div>}
                 {successMessage && <div className="success-message">{successMessage}</div>}

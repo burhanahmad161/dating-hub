@@ -17,6 +17,7 @@ header {
     text-align: center;
     color: #ffffff;
 }
+
 .mission-vision h2,
 .team h2,
 .contact h2 {
@@ -24,6 +25,7 @@ header {
     padding-top: 20px;
     color: #e70536e8;
 }
+
 .mission-vision p,
 .team p,
 .contact p {
@@ -52,10 +54,33 @@ header {
 .contact p {
     margin-bottom: 8px;
 }
+
 .mission-vision,
 .team,
-.contact
-{
+.contact {
     background-color: #ffa1a16c;
-} 
-/* Add more styles as needed based on your specific requirements */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    .mission-vision h2,
+    .team h2,
+    .contact h2 {
+        margin-left: 15px;
+        padding-top: 10px;
+    }
+
+    .mission-vision p,
+    .team p,
+    .contact p {
+        margin-left: 15px;
+    }
+
+    .team-member img {
+        width: 80px;
+    }
+}

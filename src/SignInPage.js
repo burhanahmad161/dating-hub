@@ -51,7 +51,9 @@ export default function SignInPage() {
             [name]: value
         });
     }
-
+    const handlePageChange = () => {
+        navigate('/register');
+    }
     const handleSignIn = () => {
         try {
             const foundUser = fetchedData.find(user =>
@@ -63,9 +65,9 @@ export default function SignInPage() {
             if (foundUser) {
                 console.log('User found. Performing login...');
                 const userGender = foundUser.gender;
-                if (userGender === 'female') {
+                if (userGender == 'female') {
                     navigate('/demo');
-                } else if (userGender === 'male') {
+                } else if (userGender == 'male') {
                     navigate('/femaleData');
                 } else {
                     navigate('/mixData');
@@ -92,7 +94,7 @@ export default function SignInPage() {
                             <input type="date" name="dob" placeholder="Enter your Date of Birth" onChange={handleInputChange}></input>
                             <button type="button" onClick={handleSignIn} className="newBtn">Sign In</button>
                         </form>
-                        <a href='/register'>Not Registered? SignUp Here...</a>
+                        <a onClick={handlePageChange}>Not Registered? SignUp Here...</a>
                     </section>
                 </Fade>
                 {errorMessage && <div className="newError-message">{errorMessage}</div>}
