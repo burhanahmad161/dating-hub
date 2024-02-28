@@ -94,7 +94,7 @@ export default function SignInPage() {
                             <input type="date" name="dob" placeholder="Enter your Date of Birth" onChange={handleInputChange}></input>
                             <button type="button" onClick={handleSignIn} className="newBtn">Sign In</button>
                         </form>
-                        <a onClick={handlePageChange}>Not Registered? SignUp Here...</a>
+                        <p className='aProp' onClick={handlePageChange}>Not Registered? SignUp Here...</p>
                     </section>
                 </Fade>
                 {errorMessage && <div className="newError-message">{errorMessage}</div>}

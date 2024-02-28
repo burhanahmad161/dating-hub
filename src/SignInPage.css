@@ -62,13 +62,13 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-a {
+aProp {
   font-size: 1em;
   margin-left: 12%;
   text-decoration: underline;
   color: #c90a0a;
 }
-a:hover{
+aProp:hover{
   cursor: pointer;
 }
 @media only screen and (max-width: 768px) {

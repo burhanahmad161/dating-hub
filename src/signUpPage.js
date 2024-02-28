@@ -140,7 +140,7 @@ export default function SignUpPage() {
                             <button onClick={handleSubmit} type="submit" className="btn" disabled={!isFormValid}>Submit</button>
                         </form>
                     </section>
-                        <a href='' onClick={handlePageChange}>Already Registered? Login Here...</a>
+                        <p className='aProp' onClick={handlePageChange}>Already Registered? Login Here...</p>
                 </Fade>
                 {errorMessage && <div className="error-message">{errorMessage}</div>}
                 {successMessage && <div className="success-message">{successMessage}</div>}
