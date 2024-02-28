@@ -102,7 +102,8 @@ export default function SignUpPage() {
                 setErrorMessage(`Error submitting form: ${error.message}`);
             }
         } else {
-            setErrorMessage('Please fill in all the fields before submitting');
+            setErrorMessage('Please fill all the fields');
+            return;
         }
     };
     

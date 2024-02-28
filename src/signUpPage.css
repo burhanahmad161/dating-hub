@@ -85,14 +85,14 @@ input::placeholder {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-aProp {
+.aProp {
   font-size: 1em;
-  margin-left: 12%;
+  margin-left: 15%;
   text-decoration: underline;
   color: #c90a0a;
 }
-aProp:hover{
-  cursor: pointer;
+.aProp:hover{
+  cursor:pointer;
 }
 /* Responsive Styles */
 @media only screen and (max-width: 768px) {
