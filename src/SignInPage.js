@@ -65,9 +65,9 @@ export default function SignInPage() {
             if (foundUser) {
                 console.log('User found. Performing login...');
                 const userGender = foundUser.gender;
-                if (userGender == 'female') {
+                if (userGender === 'female') {
                     navigate('/demo');
-                } else if (userGender == 'male') {
+                } else if (userGender === 'male') {
                     navigate('/femaleData');
                 } else {
                     navigate('/mixData');
