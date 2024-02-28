@@ -1,10 +1,7 @@
-// Home.js
-
 import React from 'react';
 import './home.css';
 import Fade from 'react-reveal/Fade';
 const Home = () => {
-    const fadeDuration = 1000;
     return (
         <Fade>
             <div className="homepage">
