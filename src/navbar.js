@@ -15,9 +15,9 @@ export default function NavBar1() {
            
             <div className="topnav" id="myTopnav">
                     <p><NavLink exact to="/" activeClassName="active"><p>Home</p></NavLink></p>
-                    <p><NavLink to="/about" activeClassName="active"><p>About</p></NavLink></p>
-                    <p><NavLink to="/register" activeClassName="active"><p>Find Your Date</p></NavLink></p>
-                    <p><NavLink to="/feedback" activeClassName="active"><p>Feedback</p></NavLink></p>
+                    <p><NavLink to="/confession" activeClassName="active"><p>View Confessions</p></NavLink></p>
+                    <p><NavLink to="/feedback" activeClassName="active"><p>Leave a Confession</p></NavLink></p>
+                    <hr></hr>
             </div>
         </header>
     )

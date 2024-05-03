@@ -1,0 +1,99 @@
+#main1 {
+  margin-bottom: 9px;
+  margin-top: 1px;
+  margin-left: 20%; /* Adjusted for responsiveness */
+  width: 80%; /* Adjusted for responsiveness */
+  padding-bottom: 10px;
+  background-color: #ffa1a16c;
+  border-radius: 20px; /* Reduced for responsiveness */
+}
+
+#mainHeading {
+  color: red;
+  margin-top: 4%;
+  padding: 2em; /* Adjusted padding for responsiveness */
+  text-align: center;
+}
+
+#main {
+  display: flex; /* Changed to flex for responsiveness */
+  flex-wrap: wrap; /* Added for responsiveness */
+  justify-content: center; /* Center items horizontally */
+}
+
+#namePadding {
+  color: white;
+  padding: 1em; /* Adjusted padding for responsiveness */
+  font-size: 1em; /* Adjusted font size for responsiveness */
+}
+
+#anonymous {
+  margin-left: 50%; /* Adjusted for responsiveness */
+  color: black;
+}
+
+/* Media Query for Small Devices (up to 768px) */
+@media only screen and (max-width: 768px) {
+  #main1 {
+    margin-left: -19%;
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  #mainHeading {
+    padding: 1em;
+  }
+
+  #namePadding {
+    padding: 0.5em;
+    font-size: 0.9em;
+  }
+
+  #anonymous {
+    margin-left: 40%;
+  }
+}
+
+/* Media Query for Medium Devices (769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  #main1 {
+    margin-left: -19%;
+    width: 70%;
+    margin-bottom: 9px;
+  }
+
+  #mainHeading {
+    padding: 1.5em;
+  }
+
+  #namePadding {
+    padding: 1em;
+    font-size: 1.1em;
+  }
+
+  #anonymous {
+    margin-left: 80%;
+  }
+}
+
+/* Media Query for Large Devices (1025px and above) */
+@media only screen and (min-width: 1025px) {
+  #main1 {
+    margin-left: 1%;
+    width: 60%;
+    margin-bottom: 9px;
+  }
+
+  #mainHeading {
+    padding: 2em;
+  }
+
+  #namePadding {
+    padding: 1.5em;
+    font-size: 1.3em;
+  }
+
+  #anonymous {
+    margin-left: 80%;
+  }
+}

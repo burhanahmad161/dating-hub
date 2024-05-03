@@ -3,8 +3,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f8f5fa;
-    color: #2d2d2d;
+        color: #2d2d2d;
 }
 
 .homepage {
@@ -14,16 +13,14 @@ body {
 }
 
 header {
-    background: #bf2626;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
-    color: #ffffff;
+    color: red;
 }
 
 .success-stories,
 .search-matching,
-.safety-privacy,
-.dating-tips,
+.confidentiality-tips,
 .subscription-info {
     background-color: #ffa1a16c;
     padding: 20px;
@@ -33,10 +30,8 @@ header {
 
 .success-stories h2,
 .search-matching h2,
-.safety-privacy h2,
-.dating-tips h2,
 .subscription-info h2 {
-    color: #e70536e8;
+    color: red;
 }
 
 .success-stories p,
@@ -46,7 +41,7 @@ header {
 .subscription-info p {
     margin-bottom: 15px;
     font-size: 1.25em;
-    color: #34043c;
+    color: white;
 }
 
 .safety-tips,
@@ -55,7 +50,7 @@ header {
 .communication-tips,
 .date-tips,
 .premium-features,
-.pricing-plans {
+.subscription-info {
     margin-top: 20px;
 }
 
@@ -65,7 +60,7 @@ header {
 .communication-tips h3,
 .date-tips h3,
 .premium-features h3,
-.pricing-plans h3 {
+.subscription-info h3 {
     color: #e70536e8;
 }
 
@@ -75,9 +70,10 @@ header {
 .communication-tips ul,
 .date-tips ul,
 .premium-features ul,
-.pricing-plans ul {
+.subscription-info ul {
     list-style-type: square;
     margin-left: 20px;
+    color: white;
 }
 
 .safety-tips li,
@@ -86,8 +82,9 @@ header {
 .communication-tips li,
 .date-tips li,
 .premium-features li,
-.pricing-plans li {
+.subscription-info li {
     margin-bottom: 8px;
+    color: white;
 }
 
 .subscription-info a {
@@ -119,7 +116,6 @@ header {
     .success-stories,
     .search-matching,
     .safety-privacy,
-    .dating-tips,
     .subscription-info {
         padding: 15px;
     }
@@ -127,7 +123,6 @@ header {
     .success-stories h2,
     .search-matching h2,
     .safety-privacy h2,
-    .dating-tips h2,
     .subscription-info h2 {
         font-size: 1.2em;
     }
@@ -135,18 +130,13 @@ header {
     .success-stories p,
     .search-matching p,
     .safety-privacy p,
-    .dating-tips p,
     .subscription-info p {
         font-size: 1em;
     }
 
-    .safety-tips,
     .privacy-policy,
     .profile-tips,
-    .communication-tips,
-    .date-tips,
-    .premium-features,
-    .pricing-plans {
+    .communication-tips{
         margin-top: 15px;
     }
 
@@ -156,7 +146,7 @@ header {
     .communication-tips h3,
     .date-tips h3,
     .premium-features h3,
-    .pricing-plans h3 {
+    .subscription-info h3 {
         font-size: 1.2em;
     }
 
@@ -166,11 +156,17 @@ header {
     .communication-tips ul,
     .date-tips ul,
     .premium-features ul,
-    .pricing-plans ul {
+    .subscription-info ul {
         margin-left: 15px;
     }
 
     .subscription-info a {
         font-size: 0.9em;
     }
+}
+li{
+    color: white;
+}
+h3{
+    color: red;
 }

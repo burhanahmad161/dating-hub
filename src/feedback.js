@@ -5,14 +5,22 @@ import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAHfOJ3wlOOjU5SPeuOBA9gMELYqkZJFEM",
-    authDomain: "dating-data-6be47.firebaseapp.com",
-    projectId: "dating-data-6be47",
-    storageBucket: "dating-data-6be47.appspot.com",
-    messagingSenderId: "929115718404",
-    appId: "1:929115718404:web:1a168f2f1db2287a538651",
-    measurementId: "G-STW671WYQV"
-};
+
+    apiKey: "AIzaSyDarp_WHCa3_Byxv9cPOR1VF0Jx7DUKZoQ",
+  
+    authDomain: "confession-page-1cfbb.firebaseapp.com",
+  
+    projectId: "confession-page-1cfbb",
+  
+    storageBucket: "confession-page-1cfbb.appspot.com",
+  
+    messagingSenderId: "386523562950",
+  
+    appId: "1:386523562950:web:1ba3ba243f275ea47268c7",
+  
+    measurementId: "G-ZV4EE04L7B"
+  
+  };
 
 if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
@@ -23,51 +31,52 @@ const db = firebase.firestore();
 const Feedback = () => {
     const [submitted, setSubmitted] = useState(false);
     const [formValues, setFormValues] = useState({
-        name: '',  // Add other fields as needed
+        confession: '', // Changed from 'feedback' to 'confession'
     });
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await db.collection('feedbackData').add({
-                feedback: formValues.feedback,
-                // Add other fields as needed
+            await db.collection('confessionData').add({
+                confession: formValues.confession,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp(), // Add timestamp field
             });
             setSubmitted(true);
         } catch (error) {
-            console.error('Error submitting feedback:', error);
+            console.error('Error submitting confession:', error);
         }
     };
+    
 
     return (
         <Fade>
             <div className="feedback-page">
                 <header>
-                    <h1>We Value Your Feedback</h1>
+                    <h1>Leave Your Confession</h1>
                 </header>
                 {!submitted ? (
                     <Fade>
                         <section className="feedback-form">
                             <form onSubmit={handleSubmit}>
-                                <label htmlFor="feedback">Your Feedback:</label>
+                                <label htmlFor="feedback"></label>
                                 <textarea
                                     id="feedback"
                                     name="feedback"
-                                    value={formValues.feedback}
-                                    onChange={(e) => setFormValues({ ...formValues, feedback: e.target.value })}
+                                    value={formValues.confession}
+                                    onChange={(e) => setFormValues({ ...formValues, confession: e.target.value })}
                                     placeholder="Tell us what you think..."
                                 ></textarea>
                                 <button type="submit" className="submit-btn">
-                                    Submit Feedback
+                                    Submit Confession
                                 </button>
+                                <p id='blah'>1 dfa button press kr k thora wait krain Pakistani hony ka saboot na dain... Shukria!</p>
                             </form>
                         </section>
                     </Fade>
                 ) : (
                     <Fade>
                         <section className="feedback-submitted">
-                            <h2>Thank you for your feedback!</h2>
-                            <p>We appreciate your input and will use it to improve our platform.</p>
+                            <h2>Your Confession has been submitted!</h2>
                         </section>
                     </Fade>
                 )}

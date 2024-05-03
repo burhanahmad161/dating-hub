@@ -1,76 +1,136 @@
 .feedback-page {
-    margin-top: 10%;
-    z-index: 1;
-    text-align: center;
-    top: 50%;
-    margin-left: 40%;
-    left: 50%;
-    width: 400px;
-    padding: 40px;
-    transform: translate(-50%, -50%);
-    background-color: #ffa1a16c;
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(71, 5, 5, 0.6);
-    border-radius: 10px;
+  margin-top: 5%;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Adjusted for responsiveness */
+  max-width: 400px; /* Added max-width for smaller screens */
+  padding: 40px;
+  background-color: #ffa1a16c;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(71, 5, 5, 0.6);
+  border-radius: 10px;
+}
+#blah{
+  color: white;
+}
+.feedback-page header h1 {
+  color: white;
+  margin-top: 4%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 1em; /* Adjusted font size for responsiveness */
+  color: #fff;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid red;
+  outline: none;
+  background: transparent;
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  color: red;
+  font-size: 0.9em; /* Adjusted font size for responsiveness */
+  text-decoration: none;
+  transition: 0.5s;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  background: transparent;
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.feedback-submitted {
+  margin-top: 10px;
+  color: red;
+  font-size: 1.2em; /* Adjusted font size for responsiveness */
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+::placeholder {
+  color: white;
+}
+
+label {
+  font-size: 1em; /* Adjusted font size for responsiveness */
+}
+
+/* Media Query for Small Devices (up to 768px) */
+@media only screen and (max-width: 768px) {
+  .feedback-page {
+    margin-left: 5%;
   }
-  
-  .feedback-page header h1 {
-    color: white;
-    margin-top: 4%;
-    text-align: center;
-    justify-content: center;
-    background: #bf2626;
-    border-radius: 10px;
-  }
-  
+
   .feedback-form textarea {
-    width: 100%;
-    padding: 10px 0;
-    font-size: 19px;
-    color: #fff;
-    margin-bottom: 20px;
-    border: none;
-    border-bottom: 1px solid red;
-    outline: none;
-    background: transparent;
+    font-size: 0.8em;
   }
-  
+
   .submit-btn {
-    position: relative;
-    display: inline-block;
-    padding: 10px 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
-    color: #ff0000;
-    font-size: 16px;
-    text-decoration: none;
-    overflow: hidden;
-    transition: 0.5s;
-    margin-top: 15px;
-    letter-spacing: 2px;
-    background: transparent;
-    border: 2px solid #ff0000;
-    border-radius: 5px;
+    font-size: 0.8em;
   }
-  
-  .submit-btn:hover {
-    background: #ff04d9;
-    color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px #ff0000, 0 0 25px #ff1e1e, 0 0 50px #ff11d7, 0 0 100px #ff2aed;
-  }
-  
+
   .feedback-submitted {
-    margin-top: 10px;
-    color: #cb0707;
-    font-size: 1.5em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
   }
-  ::placeholder
-  {
-    color: white;
+
+  label {
+    font-size: 0.8em;
   }
-  label{
+}
+
+/* Media Query for Medium Devices (769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .feedback-page {
+    margin-left: 10%;
+  }
+
+  .feedback-form textarea {
+    font-size: 0.9em;
+  }
+
+  .submit-btn {
+    font-size: 0.9em;
+  }
+
+  .feedback-submitted {
+    font-size: 1.1em;
+  }
+
+  label {
+    font-size: 0.9em;
+  }
+}
+
+/* Media Query for Large Devices (1025px and above) */
+@media only screen and (min-width: 1025px) {
+  .feedback-page {
+    margin-left: 15%;
+  }
+
+  .feedback-form textarea {
+    font-size: 1em;
+  }
+
+  .submit-btn {
+    font-size: 1em;
+  }
+
+  .feedback-submitted {
     font-size: 1.3em;
   }
-  
+
+  label {
+    font-size: 1em;
+  }
+}
